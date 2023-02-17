@@ -167,11 +167,11 @@ An array of [dependency object](#dependency-objects)s. Defines mods that this mo
 Influences whether or not a mod candidate should be loaded or not. May be any of these values:
 
 * "always" (default for mods directly in the mods folder)
-* "if_possible"
-* "if_required" (default for jar-in-jar mods)
+* "if_possible" (default for jar-in-jar mods)
+* "if_required" 
 
 This doesn't affect mods directly placed in the mods folder.
-
+(Note that prior to Loader 0.18, the default load type for jar-in-jar mods was "if_required", not "if_possible"
 ##### Always
 
 If any versions of this mod are present, then one of them will be loaded.
